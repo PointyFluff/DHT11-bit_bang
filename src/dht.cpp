@@ -1,5 +1,7 @@
 /* (c) 2008 Samuel E. Bray
+ * Arduino
  * DHT-11 Temp sensor, bit-bang driver. 
+ * And yeah, it's terrible. 
  */ 
 
 #include <Arduino.h>
@@ -43,7 +45,7 @@ byte readByte() {
       out |= (1<<(7-i));
     }
     while(digitalRead(data)==HIGH) {
-      Serial.print("-");
+      Serial.print("-"); // call me Morse! (looks like morsel, mmmm...so, buttery... *drool*)
     }
   }
   return out;
