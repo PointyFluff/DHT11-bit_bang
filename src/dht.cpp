@@ -27,7 +27,7 @@ void setup() {
   pinMode(out, OUTPUT);
   sensorInit();
   delay(2000); // give sensor time to startup and stabilize
-  Serial.println("Ready Bitches!\n");
+  Serial.println("Ready, Freddy!\n");
 }
 
 byte readByte() {
